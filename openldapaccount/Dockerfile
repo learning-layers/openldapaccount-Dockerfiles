@@ -1,7 +1,7 @@
-FROM gordinlearninglayers/tomcat
+FROM learninglayers/tomcat:7.0.65
 MAINTAINER Yordan Manolov <manolov@dbis.rwth-aachen.de>
- 
-RUN chmod 766 -R /opt 
+
+RUN chmod 766 -R /opt
 
 #ADD account/ $TOMCAT_HOME/webapps # -> Device or resource busy
 ENV PWMCONF /opt/conf
