@@ -16,7 +16,7 @@
   <properties>
     <property key="configTemplate">DEFAULT</property>
     <property key="configPasswordHash">$2a$10$vLKylKyrCyzGERTb2ioGxO7KIUmnpGMwPX6OG/c.wrp5fApyYlZjm</property>
-    <property key="configIsEditable">false</property>
+    <property key="configIsEditable">true</property>
     <property key="configEpoch">40</property>
     <property key="settingsChecksum">F3CFE58A0955FD6B233996461058E989</property>
   </properties>
@@ -209,7 +209,7 @@
       <label>LDAP Proxy Password</label>
       <!--Note: This value is encrypted and can not be edited directly.-->
       <!--Please use the Configuration Manager GUI to modify this value.-->
-      <value plaintext="true">LDAP_PROXY_PASSWORD</value>
+      <value>Ix1XLCI7qFudF8j/i6lHbQ==</value>
     </setting>
     <setting key="ldap.rootContexts" syntax="STRING_ARRAY">
       <label>LDAP Contextless Login Roots</label>
