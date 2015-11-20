@@ -1,6 +1,6 @@
 openldapaccountdata:
     container_name: openldapaccount-data
-    image: learninglayers/openldapaccount-data:0.0.5
+    image: learninglayers/openldapaccount-data:0.0.6
 openldapaccount:
     container_name: openldapaccount
     image: learninglayers/openldapaccount:0.0.5
@@ -8,6 +8,7 @@ openldapaccount:
         - openldapaccountdata
     links:
         - openldap
+        - oidc
     environment:
         - PWM_LDAP_ADMINS=<value>koren</value><value>nicolaescu</value>
     env_file:
