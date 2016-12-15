@@ -7,7 +7,7 @@ RUN chmod 766 -R /opt
 ENV PWMCONF /opt/conf
 ENV PWMACC /opt/account
 
-CMD cp -fR $PWMACC $TOMCAT_HOME/webapps \
+RUN cp -fR $PWMACC $TOMCAT_HOME/webapps \
     && cp -fR $PWMCONF $TOMCAT_HOME/webapps \
     && sed -i "s#LAYERS_API_URI#${LAYERS_API_URI}#g" $PWMCONF/PwmConfiguration.xml \
     && sed -i "s#LDAP_ROOT_DN#${LDAP_ROOT_DN}#g" $PWMCONF/PwmConfiguration.xml \
