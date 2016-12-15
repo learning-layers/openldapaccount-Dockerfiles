@@ -1,9 +1,9 @@
 openldapaccountdata:
     container_name: openldapaccount-data
-    image: learninglayers/openldapaccount-data:0.0.6
+    image: learninglayers/openldapaccount-data:0.0.7
 openldapaccount:
     container_name: openldapaccount
-    image: learninglayers/openldapaccount:0.0.8
+    image: learninglayers/openldapaccount:0.0.9
     volumes_from:
         - openldapaccountdata
     links: [openldap, oidc]
