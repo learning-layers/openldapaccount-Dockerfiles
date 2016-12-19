@@ -11,8 +11,7 @@ ENV COPYACC cp -fR $PWMACC $TOMCAT_HOME/webapps
 ENV COPYCONF cp -fR $PWMCONF $TOMCAT_HOME/webapps
 ENV COPYCONFFILE cp $PWMCONF/PwmConfiguration.xml $TOMCAT_HOME/webapps/account/WEB-INF
 
-ENTRYPOINT ["/bin/bash", "-c", "echo s#LAYERS_API_URI#${LAYERS_API_URI}#g && \
-echo Copying account folder to $TOMCAT_HOME/webapps && \
+ENTRYPOINT ["/bin/bash", "-c", "echo Copying account folder to $TOMCAT_HOME/webapps && \
 $COPYACC && \
 echo Copying PwmConfiguration to $TOMCAT_HOME/webapps && \
 $COPYCONF && \
