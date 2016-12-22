@@ -139,7 +139,7 @@
     </setting>
     <setting key="display.custom.logoImage" syntax="STRING">
       <label>Custom Logo Image</label>
-      <value><![CDATA[LAYERS_API_URI/logo.png]]></value>
+      <value><![CDATA[LAYERS_API_URIlogo.png]]></value>
     </setting>
     <setting key="password.allowChange.queryMatch" syntax="STRING">
       <label>Change Password Query Match</label>
