@@ -985,7 +985,7 @@
     </setting>
     <setting key="newUser.writeAttributes" syntax="ACTION">
       <label>New User Actions</label>
-      <value>{"name":"MITREid Wrapper","description":"MITREid userinfo Wrapper","type":"webservice","method":"post","url":"http://oidc:8080/o/oauth2/updateuser/new","body":"@LDAP:uid@"}</value>
+      <value>{"name":"MITREid Wrapper","description":"MITREid userinfo Wrapper","type":"webservice","method":"get","url":"http://oidc:8080/o/oauth2/updateuser/new/@LDAP:uid@","body":""}</value>
 <!-- >      <value>{"name":"Tethys Wrapper","description":"Tethys user storage Wrapper","type":"webservice","method":"post","headers":{"pw":"useanotherpw"},"url":"http://TETHYS_IP/TethysLDAPConnector/mount.json/@LDAP:uid@"}</value> <-->
     </setting>
     <setting key="newUser.deleteOnFail" syntax="BOOLEAN">
@@ -1110,7 +1110,7 @@
     </setting>
     <setting key="updateAttributes.writeAttributes" syntax="ACTION">
       <label>Update Write Actions</label>
-      <value>{"name":"MITREid Wrapper","description":"MITREid userinfo Wrapper","type":"webservice","method":"post","url":"http://oidc:8080/o/oauth2/updateuser/update","body":"@LDAP:uid@"}</value>
+      <value>{"name":"MITREid Wrapper","description":"MITREid userinfo Wrapper","type":"webservice","method":"get","url":"http://oidc:8080/o/oauth2/updateuser/update/@LDAP:uid@","body":""}</value>
     </setting>
     <setting key="updateAttributes.form" syntax="FORM">
       <label>Update Profile Form</label>
