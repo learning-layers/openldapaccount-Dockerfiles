@@ -18,7 +18,7 @@ $COPYCONF && \
 sed -i s#LAYERS_API_URI#${LAYERS_API_URI}#g $PWMCONF/PwmConfiguration.xml \
 && sed -i s#LDAP_ROOT_DN#${LDAP_ROOT_DN}#g $PWMCONF/PwmConfiguration.xml \
 && sed -i s#LDAP_ROOT_USER#${LDAP_ROOT_USER}#g $PWMCONF/PwmConfiguration.xml \
-&& sed -i s#PWM_LDAP_ADMINS#${PWM_LDAP_ADMINS}#g $PWMCONF/PwmConfiguration.xml \
+&& sed -i s#PWM_LDAP_ADMINS#<value>${LAYERS_API_ADMIN}</value>#g $PWMCONF/PwmConfiguration.xml \
 && sed -i s#TETHYS_IP#${TETHYS_IP}#g $PWMCONF/PwmConfiguration.xml \
 && sed -i s#LDAP_PROXY_PASSWORD#${LDAP_PROXY_PASSWORD}#g $PWMCONF/PwmConfiguration.xml \
 && $COPYCONFFILE &&. /opt/init.sh"]
