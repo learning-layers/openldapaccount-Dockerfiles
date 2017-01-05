@@ -225,7 +225,7 @@
     </setting>
     <setting key="pwmAdmin.queryMatch" syntax="STRING">
       <label>Administrator Query String</label>
-      <value><![CDATA[(|PWM_LDAP_ADMINS)]]></value>
+      <value><![CDATA[(|<user>PWM_LDAP_ADMINS</user>)]]></value>
     </setting>
     <setting key="ldap.usernameSearchFilter" syntax="STRING">
       <label>Username Search Filter</label>
